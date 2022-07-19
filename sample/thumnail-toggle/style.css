@@ -1,0 +1,35 @@
+.main-img {
+  height: auto;
+  width: 100%;
+}
+.main-img img {
+  height: auto;
+  width: 100%;
+}
+.sub-img {
+  display: flex;
+  margin-top: 10px;
+}
+.sub-img li {
+  margin-right: 2%;
+  width: calc(96% / 3);
+}
+.sub-img li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.sub-img li img {
+  border: 2px solid transparent;
+  transition: border 0.5s;
+}
+.sub-img img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+
+/* アクティブな画像の枠線を変更 */
+.sub-img li.current img {
+  border: 2px solid red;
+  transition: border 0.5s;
+}
